@@ -33,6 +33,6 @@ def get_english_meaning(file_path = './lib/emoticons.yml', japanese_emoticon)
   test = result.keys.find do |emoticon|
     result[emoticon][:japanese] == japanese_emoticon
   end
-  test ? emoticon : "Sorry, that emoticon was not found"
+  test ? test : "Sorry, that emoticon was not found"
   # code goes here
 end
