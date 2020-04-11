@@ -25,7 +25,6 @@ def get_japanese_emoticon(file_path = './lib/emoticons.yml', english_emoticon)
 
   end
   test ? result[test][:japanese] : "Sorry, that emoticon was not found"
-    binding.pry
   # code goes here
 end
 
