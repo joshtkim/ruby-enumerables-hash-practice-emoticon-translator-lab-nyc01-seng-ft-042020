@@ -30,9 +30,9 @@ end
 
 def get_english_meaning(file_path = './lib/emoticons.yml', japanese_emoticon)
   result = load_library(file_path)
-  test = result.keys.find do |meaning|
-    result[meaning][:japanese] == japanese_emoticon
-
+  test = result.keys.find do |emoticon|
+    result[emoticon][:japanese] == japanese_emoticon
+binding.pry
   end
   test ? result[test][:meaning] : "Sorry, that emoticon was not found"
 binding.pry
